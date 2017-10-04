@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pract5.Calculadora">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+
+            <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" TextColor="Black" Font="45" x:Name="caja"/>
+            <Button Grid.Column="0" Grid.Row="1" Text="%" BackgroundColor="Gray" Clicked="Porcentaje_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="1" Text="Sqrt" BackgroundColor="Gray" Clicked="Raiz_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="1" Text="^2" BackgroundColor="Gray" Clicked="Potencia_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="1" Text="1/x" BackgroundColor="Gray" Clicked="RI_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="2" Text="CE" BackgroundColor="Gray" Clicked="Ce_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="2" Text="C" BackgroundColor="Gray" Clicked="C_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="2" Text="←" BackgroundColor="Gray"/>
+            <Button Grid.Column="3" Grid.Row="2" Text="/" BackgroundColor="Gray" Clicked="Division_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="3" Text="7" BackgroundColor="Gray" Clicked="Siete_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="3" Text="8" BackgroundColor="Gray" Clicked="Ocho_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="3" Text="9" BackgroundColor="Gray" Clicked="Nueve_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="3" Text="X" BackgroundColor="Gray" Clicked="Multi_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="4" Text="4" BackgroundColor="Gray" Clicked="Cuatro_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="4" Text="5" BackgroundColor="Gray" Clicked="Cinco_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="4" Text="6" BackgroundColor="Gray" Clicked="Seis_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="4" Text="-" BackgroundColor="Gray" Clicked="Menos_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="5" Text="1" BackgroundColor="Gray" Clicked="Uno_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="5" Text="2" BackgroundColor="Gray" Clicked="Dos_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="5" Text="3" BackgroundColor="Gray" Clicked="Tres_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="5" Text="+" BackgroundColor="Gray" Clicked="Mas_Clicked"/>
+            <Button Grid.Column="0" Grid.Row="6" Text="±" BackgroundColor="Gray" Clicked="Mm_Clicked"/>
+            <Button Grid.Column="1" Grid.Row="6" Text="0" BackgroundColor="Gray" Clicked="Cero_Clicked"/>
+            <Button Grid.Column="2" Grid.Row="6" Text="." BackgroundColor="Gray" Clicked="Punto_Clicked"/>
+            <Button Grid.Column="3" Grid.Row="6" Text="=" BackgroundColor="Gray" Clicked="Igual_Clicked"/>
+
+            <Button Grid.Column="3" Grid.Row="7" Text="Formulario" TextColor="Black" FontSize="10" BackgroundColor="Gray"  Clicked="Button_Clicked" />
+            <Button Grid.Column="2" Grid.Row="7" Text="Pagina inicio" TextColor="Black" FontSize="10" BackgroundColor="Gray"  Clicked="Button_Clicked_1" />
+            <Button Grid.Column="1" Grid.Row="7" Text="Villanueva.!!" TextColor="Black" FontSize="9" BackgroundColor="Gray" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
